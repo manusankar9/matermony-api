@@ -1,0 +1,66 @@
+{
+  "name": "matter-money",
+  "version": "0.3.0",
+  "homepage": "https://matter-money-real.herokuapp.com/",
+  "description": "matter-moneyis a Mern stack app using Express 4",
+  "engines": {
+    "node": "12.x"
+  },
+  "main": "index.js",
+  "scripts": {
+    "watch": "nodemon ./index.js",
+    "start:node": "node index.js",
+    "start:react": "react-scripts start",
+    "build": "GENERATE_SOURCEMAP=false react-scripts build",
+    "test": "node test.js"
+  },
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "crypto": "^1.0.1",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongodb": "^3.5.3",
+    "morgan": "^1.9.1",
+    "node-sass": "^4.13.0",
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0",
+    "react-router-dom": "^5.1.2",
+    "react-redux": "^5.0.7",
+    "redux": "^4.0.0-0",
+    "email-validator": "2.0.4",
+    "formik": "1.5.1",
+    "yup": "0.27.0"
+  },
+  "devDependencies": {
+    "enzyme": "^3.11.0",
+    "enzyme-adapter-react-16": "^1.15.2",
+    "nodemon": "^1.19.4",
+    "react-scripts": "latest",
+    "request": "^2.81.0",
+    "tape": "^4.7.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/guntupallikoteswararao2016/matter-money.git"
+  },
+  "keywords": [
+    "node",
+    "heroku",
+    "express"
+  ],
+  "license": "MIT",
+  "proxy": "http://localhost:5000",
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
