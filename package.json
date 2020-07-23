@@ -9,9 +9,7 @@
   "main": "index.js",
   "scripts": {
     "watch": "nodemon ./index.js",
-    "start:node": "node index.js",
-    "start:react": "react-scripts start",
-    "build": "GENERATE_SOURCEMAP=false react-scripts build",
+    "start": "node index.js",
     "test": "node test.js"
   },
   "dependencies": {
