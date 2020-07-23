@@ -15,7 +15,7 @@ console.log("requ:::",req.body)
             dbCollection.find().toArray(function (err, result) {
                 if (err) throw err;
                 res.json(result || []);
-                console.log("posts",result);
+                console.log("posts are ready",result);
             });
         }, function (err) {
             throw (err);
