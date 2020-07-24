@@ -10,6 +10,10 @@ const jwt = require('jsonwebtoken');
 const profileRoutes = require("./apis/routes/profile");
 const loginRoutes = require("./apis/routes/login");
 const RegisterRoutes = require("./apis/routes/register");
+const corsConfig = require("./cors-config");
+const cors = require('cors');
+
+
 
 //<<PORT>>
 const PORT = process.env.PORT || 5000;
@@ -21,6 +25,8 @@ app.use(express.static(path.join(__dirname, 'build')));
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 app.use(logger('dev'));
+app.use(cors());
+
 
 app.listen(PORT, () => console.log(`Server Listening on ${PORT}`));
 app.use("/profile", profileRoutes);
