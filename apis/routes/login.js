@@ -2,13 +2,16 @@ const express = require("express");
 const router = express.Router();
 const jwt = require('jsonwebtoken');
 const db = require("./db");
+const cors = require('cors');
+const corsConfig = require('../../cors-config');
+
 
 const dbName = "mater_mony",
     collectionName = "all_profiles";
 
 
 
-router.get("/",(req, res)=>{
+router.get("/",cors(corsConfig),(req, res)=>{
 console.log("requ:::",req.body)
     console.log("ms");
      db.initialize(dbName, collectionName, function (dbCollection) {
