@@ -21,7 +21,7 @@
     "jsonwebtoken": "^8.5.1",
     "mongodb": "^3.5.3",
     "morgan": "^1.9.1",
-    "node-sass": "^4.13.0",
+    "node-sass": "^7.0.0",
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
     "react-router-dom": "^5.1.2",
